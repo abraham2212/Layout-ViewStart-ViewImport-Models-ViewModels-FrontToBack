@@ -1,0 +1,50 @@
+﻿@*@{
+    string name = (string)ViewData["name"];
+    string surname =(string)TempData["surname"];
+}*@
+
+@*@model string*@
+@*@model Student*@
+@*@model List<Student>*@
+@model HomeVM
+@*
+<h1>@name</h1>
+<h1>@surname</h1>
+<h1>@ViewBag.address</h1>*@
+
+@*@foreach (var item in ViewBag.nums)
+{
+    <h1>@item</h1>
+}*@
+
+@*<h1>@Model</h1>*@
+
+@*@foreach (var item in Model)
+{
+    <ul>
+        <li>@item.Name</li>
+        <li>@item.Age</li>
+    </ul>
+
+}*@
+
+@*<ul>
+    <li>@Model.Name</li>
+    <li>@Model.Age</li>
+</ul>*@
+
+@*@foreach (var item in Model.Student)
+{
+    <ul>
+        <li>@item.Name</li>
+        <li>@item.Age</li>
+    </ul>
+}
+<h5>@Model.Product.Name</h5>
+<h5>@Model.Product.Price</h5>*@
+
+
+
+@*<header>Header section</header>*@
+<main>Home page</main>
+@*<footer>Footer section</footer>*@
